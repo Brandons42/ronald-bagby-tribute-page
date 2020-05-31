@@ -1,0 +1,15 @@
+{
+	"name": "ronald-bagby-tribute-page",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Brandon Suen <brandonsuendeveloper@gmail.com>",
+	"scripts": {
+		"build": "rm -rf ./dist && parcel build index.html --public-url ./",
+		"deploy": "yarn build && gh-pages -d dist",
+		"start": "parcel index.html"
+	},
+	"devDependencies": {
+		"gh-pages": "^3.0.0",
+		"parcel-bundler": "^1.12.4"
+	}
+}
